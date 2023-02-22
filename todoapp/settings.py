@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'corsheaders',
+    'task.apps.TaskConfig',
 ]
 
 MIDDLEWARE = [
@@ -86,8 +87,8 @@ DATABASES = {
             'NAME': 'todoapp',
             'USER': 'root',
             'PASSWORD': '123456',
-            'HOST':'localhost',
-            'PORT':'3306',
+            'HOST': 'localhost',
+            'PORT': '3306',
         },
     'sql_lite': {
         'ENGINE': 'django.db.backends.sqlite3',
